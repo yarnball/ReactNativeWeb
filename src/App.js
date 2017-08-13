@@ -31,9 +31,7 @@ export default class ExampleApp extends Component {
           {x.map((x, index) => {
             return (
               <Text key={index} style={styles.box}>
-                <div>
                   {x.player1} VS {x.player2}
-                </div>
                 <Button onPress={this.test} title={x.player1} style={styles.buttonStyle} />
               </Text>
             );
